@@ -1,0 +1,271 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Cabin&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+    /* NAVBAR */
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 40px;
+  margin-top: 10px;
+}
+
+.nav .part-1 span {
+  margin-right: 50px;
+  font-size: 26px;
+}
+
+.nav .part-2 li  {
+  display: inline;
+  padding: 0px 0px;
+  margin-right:50px;  
+}
+
+.nav .part-2 li a {
+  text-decoration: none;
+  color: #000;
+  position: relative; 
+}
+
+.nav .part-2 {
+  text-align: right;
+}
+
+.nav .part-2 li a::before {
+  content: "";
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: -5px;   
+  border-bottom: 2px solid#000;
+}
+
+.nav .part-2 li:hover a::before {
+  right: 0;
+  left: 0;
+}
+
+
+    /* TAGLINE */
+.tagline {        
+    font-size: 28px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+    /* SECTION  */
+
+#container {
+  margin: 50px 80px;
+  margin-bottom: 70px;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 50px;    
+}
+
+.slideshow {
+  box-shadow: 1px 1px 6px 3px #000;
+  
+}
+.slideshow img {
+  width: 100%;
+  height: 400px;
+}
+
+.btn-shopnow {
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;  
+}
+
+.btn-shopnow button {
+  box-shadow: 1px 1px 2px #424141;
+}
+
+
+
+#content .login {
+  
+  text-align: center;
+  align-self: center;  
+  height:400px;
+  box-shadow: 1px 1px 6px 1px #000;
+  
+}
+#content form {
+  margin: auto 50px;
+  margin-bottom: 20px;
+  
+}
+
+#content form button {
+  margin-top: 20px;
+}
+
+
+.login h1 { 
+  color: #2b2a2a;
+  text-shadow: 0 0 10px rgba(0,0,0,0.3);
+  letter-spacing:1px;
+  text-align:center;
+  padding-bottom: 20px;
+  margin: 25px 0;
+}
+
+ input { 
+	width: 100%; 
+	margin-bottom: 20px; 
+	
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #000;
+	
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	
+  transition: box-shadow .5s ease;
+ } 
+input:focus { 
+  box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2);
+ }
+
+#content .btn1 {    
+  display: inline-block;   
+  
+  padding: 4px 10px 4px; 
+  margin-bottom: 0; 
+  font-size: 13px; 
+  line-height: 18px;
+  color: #333333; 
+  text-align: center;  
+  background-color: #f5f5f5; 
+  
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border: 1px solid #e6e6e6;
+  cursor: pointer; 
+  
+} 
+
+#content .btn1:hover, .btn1:active, .btn1[disabled] { 
+  background-color: #e6e6e6;
+ }
+ #content .btn-large {
+  padding: 9px 14px; 
+  font-size: 15px;
+  line-height: normal;
+  border-radius: 5px; 
+}
+#content .btn1:hover {
+  color: #333333;
+  text-decoration: none; 
+  background-color: #e6e6e6;
+  background-position: 0 -15px; 
+  -webkit-transition: background-position 0.1s linear; 
+  -moz-transition: background-position 0.1s linear; 
+  -ms-transition: background-position 0.1s linear; 
+  -o-transition: background-position 0.1s linear; 
+  transition: background-position 0.1s linear; 
+}
+#content .btn-primary, .btn-primary:hover { 
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); 
+  color: #ffffff; 
+}
+#content .btn-primary.active {
+   color: rgba(255, 255, 255, 0.75); 
+  }
+  #content .btn-primary {
+  color: #000;
+  background-color: #fff;   
+  border: 1px solid #1b1b1b;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5); 
+  }
+#content .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+  filter: none; 
+  background-color: #475257 ;  
+  color: #fff;
+    
+}
+
+
+.login .register {
+  font-size: 14px;
+  
+}
+
+    
+
+    /* FOOTER */
+
+footer .footer {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  box-shadow: 1px 1px 15px #000;
+}
+
+footer li {  
+  list-style: none;
+  
+}
+
+footer a {
+  color: #000;
+  line-height: 30px;
+  position: relative;
+}
+
+footer .footer span {
+  font-size: 20px;
+  
+}
+
+footer .footer .logoFooter {
+  line-height: 25px;
+}
+
+footer .footer .logoFooter div {
+  font-size: 30px;
+  padding-bottom: 20px;
+  margin-top: 15px;
+}
+
+footer .footer li a::before {
+  content: "";
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: -3px;   
+  border-bottom: 2px solid#000;
+}
+
+footer .footer li:hover a::before {
+  right: 0;
+  left: 0;
+}
+
+footer .footer a:hover {
+  color: #000;
+  text-decoration: none;
+}
+.copy {
+  margin: 0 50px;
+  text-align: end;
+  padding: 10px;
+}
