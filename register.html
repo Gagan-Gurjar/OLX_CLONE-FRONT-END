@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="regStyle.css">
+
+</head>
+<body>
+        <!-- NAVBAR -->
+    <nav>
+        <div class="nav">  
+            <div class="part-1">          
+                <div class="input-group mb-3">
+                    <span>OLX Clone</span>
+                    <input type="text" class="form-control" placeholder="What are you looking for..?" aria-label="Recipient's username" aria-describedby="button-addon2" disabled>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary dis-btn" type="button" id="button-addon2" disabled>Search</button>
+                    </div>            
+                </div>   
+            </div> 
+
+            <div class="part-2">    
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutus">About</a></li>
+                    <li aria-disabled="true" class="shop-disable"><a href="#" class="not-active" >Shop</a></li>
+                    <li><a href="#">Help</a></li>
+                    <button type="button" class="btn btn-light dis-btn" disabled>Your Cart</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+        <!-- SECTION-FORM -->
+
+    <section>
+        <div id="register">
+            <form action="">
+                <h1>Register</h1>
+                <hr>
+                <div class="first">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <img src="https://image.flaticon.com/icons/svg/1828/1828486.svg">
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="First Name" required>
+                    </div>
+                </div>
+
+                <div class="last">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <img src="https://image.flaticon.com/icons/svg/1828/1828486.svg">
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Last Name" required>
+                    </div>                    
+                </div>
+
+                <div class="email">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <img src="https://www.flaticon.com/premium-icon/icons/svg/542/542689.svg">
+                            </span>
+                        </div>
+                        <input type="email" class="form-control" placeholder="Email" required>
+                    </div>                    
+                </div>
+
+                <div class="pwd">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <img src="https://image.flaticon.com/icons/svg/483/483408.svg">
+                            </span>
+                        </div>
+                        <input type="password" class="form-control" placeholder="Password" required>
+                    </div>                   
+                </div>
+
+                <div class="btn1">
+                    <p>By clicking Register, you agree on our <br><a href="#">terms and condition</a>.</p>
+                    <button type="submit" class="btn-reg btn btn-outline-dark ">Register</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+        <!-- FOOTER  -->
+
+    <footer>
+        <div class="footer">
+            <div class="logoFooter">
+                <div class="f-logo">OLX Clone</div>
+                123 Oriental Group<br>
+                Raisen Road<br>
+                Bhopal, India
+            </div>
+            <div class="wrapper">
+                <div class="mainMenu">
+                    <span>MAIN MENU</span><br>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li class="shop-disable"><a href="#" class="not-active">Shop</a></li>
+                        <li class="shop-disable"><a href="#" class="not-active">Your Cart</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>        
+                </div>
+
+                <div class="info">
+                    <span>CATEGORIES</span><br>
+                    <ul>
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Tools</a></li>
+                        <li><a href="#">Others</a></li>
+                    </ul>        
+                </div>
+
+                <div class="findUs">
+                    <span>FIND US ON</span><br>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            Copyright &copy;2019 OLX Clone
+        </div>
+    </footer>    
+    
+</body>
+</html>
